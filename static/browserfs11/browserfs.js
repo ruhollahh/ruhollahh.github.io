@@ -10352,7 +10352,7 @@ var JSDelivrRequest = /*@__PURE__*/(function (BaseFileSystem) {
      * Construct an HTTPRequest file system backend with the given options.
      */
     JSDelivrRequest.Create = function Create (opts, cb) {
-        var URL = "https://data.jsdelivr.com/v1/package/npm/" + (opts.dependency) + "@" + (opts.version) + "/flat";
+        var URL = "https://nodejs-n5p8mn.chbk.run/data-jsdelivr/v1/package/npm/" + (opts.dependency) + "@" + (opts.version) + "/flat";
         asyncDownloadFile(URL, "json", function (e, data) {
             if (e) {
                 cb(e);
